@@ -2,26 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <title>Каталог</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
         <header class="main-menu">
+            <a class="main-logo" href="index.html">
+            <img src="img/logo.svg" width="154" height="64" alt="Логотип проекта Глейси"></a>
                 <nav class="navigation">
-                <a class="main-logo" href="index.html">
-                <img src="img/logo.svg" width="154" height="64" alt="Логотип проекта Глейси">
-                </a>
                 <ul class="menu-navigation">
                   <li class="menu-navigation-current"><a href="catalog.html">Каталог</a></li> 
                   <li><a href="shipping-and-payment.html">Доставка и оплата</a></li>
                   <li><a href="info.html">О компании</a></li>
                 </ul>
-                <ul class="user-navigation">
-                  <li><a href="look">Поиск</a></li>
-                  <li><a href="input">Вход</a></li>
-                  <li><a href="basket">Корзина</a>
-                  </li>
-                </ul>
+                <div class="user-navigation">
+                    <div class="user"><a href="look"><img src="img/loupe.svg" alt="Поиск"></a></div>
+                    <div class="user"><a href="input"><img src="img/entrance.svg" alt="Вход">Вход</a></div>
+                    <div class="user"><a href="batton"><img src="img/basket-red.svg" ail="Корзина"></a></div>
                 </nav>
               </header>  
 <main class="container">
@@ -233,27 +230,24 @@
   </ul>
 </section>
 </main>
-<footer class="main-footer">
-  <div class="Footer-social">
-    <ul>
-    <li><a class="social-button" href="#">Твиттер</a></li>
-    <li><a class="social-button" href="#">Инстаграм</a></li>
-    <li><a class="social-button" href="#">Фейсбук</a></li>
-    <li><a class="social-button" href="#">Вконтакте</a></li>
-    </ul>
-  </div>
-  <div class="Footer-info">
-    <ul>
-      <li><a class="info-company" href="#">Для поставщиков</a></li>
-      <li><a class="info-company" href="#">О производстве</a></li>
-      <li><a class="info-company" href="#">Наши документы</a> </li>
-      <li><a class="info-company" href="#">Экологические стандарты</a> </li>
-    </ul>
-  </div>
-  <p class="footer-copyright">
-    <a class="button" href="https://htmlacademy.ru">Академия HTML</a>
-    <b>Сделано в HTML Academy @2018</b>
-  </p>
-</footer>
+<footer class="footer">
+    <ul class="footer-social">
+      <li><a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер"></a></li>
+      <li><a class="social-button" href="#"><img src="img/instagram.svg" alt="Инстаграм"></a></li>
+      <li><a class="social-button" href="#"><img src="img/fb.svg" alt="Фейсбук"></a></li>
+      <li><a class="social-button" href="#"><img src="img/vk.svg" alt="Вконтакте"></a></li>
+      </ul>
+    <ul class="footer-info">
+        <img src="img/heart.svg" width="15" height="13" alt="Сердечко">
+        <li><a class="info-company" href="#">Для поставщиков</a></li>
+        <li><a class="info-company" href="#">О производстве</a></li>
+        <li><a class="info-company" href="#">Наши документы</a> </li>
+        <li><a class="info-company" href="#">Экологические стандарты</a> </li>
+      </ul>
+    <p class="footer-copyright">
+      <a class="footer-button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Академия HTML" width="108" height="39"></a><br>
+      <b>Сделано в HTML Academy @2018</b>
+    </p>
+  </footer>
 </body>
 </html>
