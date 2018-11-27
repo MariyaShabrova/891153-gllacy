@@ -12,17 +12,77 @@
   </a>
   <nav class="navigation">
   <div class="menu-navigation">
-    <div class="menu"><a href="catalog.html">Каталог</a></div> 
-    <div class="menu"><a href="shipping-and-payment.html">Доставка и оплата</a></div>
-    <div class="menu"><a href="info.html">О компании</a></div>
-  </div>
+      <ul class="site-navigation">
+      <li class="menu"><a href="catalog.html">Каталог</a></li> 
+      <ul class="submenu-catalog">
+      <li class="submenu"><a href="news.html">Новости</a></li>
+      <li class="submenu"><a href="catalog-cream.html">Сливочное</a></li>
+      <li class="submenu"><a href="catalog-sherbet.html">Щербеты</a></li>
+      <li class="submenu"><a href="catalog-ice.html">Фруктовый лед</a></li>
+      <li class="submenu"><a href="catalog-melorin.html">Мелорин</a></li>
+      </ul>
+    <li class="menu"><a href="shipping-and-payment.html">Доставка и оплата</a></li>
+    <li class="menu"><a href="info.html">О компании</a></li>
+  </ul>
   <div class="user-navigation">
-    <div class="user"><a href="look"><img src="img/loupe.svg" alt="Поиск"></a></div>
-    <div class="user"><a href="input"><img src="img/entrance.svg" alt="Вход">Вход</a></div>
+    <div class="user"><a href="look"><img src="img/loupe.svg" alt="Поиск"></a>
+    <form class="Look-form">
+        <input type="text" placeholder="Что ищем?">
+        <button class="button" type="submit">
+          </button> 
+      </form>
+      </div>
+    <div class="user"><a href="input"><img src="img/entrance.svg" alt="Вход">Вход</a>
+      <form class="input-form" action="" method="post">
+        <p>
+          <label class="visually-hidden" for="user-post">Электронная почта</label>
+          <input class="post-icon-user" id="user-post" type="text" name="post" placeholder="Электронная почта">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <a class="restore" href="#">Забыли пароль?</a>
+        </p>
+        <p class="login-password-new">
+            <a class="restore" href="#">Новая регистрация</a>
+          </p>
+        <button class="button" type="submit">
+          Войти
+        </button>
+      </form>
+    </div>
     <div class="user"><a href="batton"><img src="img/basket.svg" ail="Корзина">Пусто</a></div>
   </nav>
 </header>
 <!--Здесь будет слайд-->
+<main class="container">
+    <section class="appointment">
+      <h2>Мы обязательно вам ответим!</h2>
+      <p class="appointment-info"></p>
+      <form class="appointment-form" action="" method="post">
+        </p>
+        <p class="appointment-item">
+          <label for="appointment-name">Как вас зовут?</label>
+          <input id="appointment-name" type="text" name="name" value="" placeholder="Как вас зовут?" >
+        </p>
+        <p class="appointment-post">
+          <label for="appointment-phone">Ваша почта для ответа?</label>
+          <input id="appointment-phone" type="text" name="post" value="" placeholder="Ваша почта для ответа?">
+        </p>
+        <p class="appointment-info">
+            <label for="appointment-info">Напишите что-нибудь...</label>
+            <input id="appointment-info" type="text" name="text" value="" placeholder="Напишите что-нибудь...">
+          </p>
+        <button class="button" type="submit">Отправить</button>
+      </form> 
+      <button class="modal-close" type="button">
+      <img src="img/cross-big.svg">
+      Закрыть
+     </button>
+    </section>
+  </main>
     <main class="content">
       <h1 class="visually-hidden">Магазин Глейси</h1>
       <section class="feature">
@@ -46,7 +106,13 @@
         <h2 class="visually-hidden">Подписка</h2>
         <p class="subscription-item">Подпишитесь на нашу сладкую рассылку и будте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=))</p>
         <!--Здесь будет форма-->
-        <a class="button" type="submit" href="">Отправить</a>
+        <form class="news-form" action="" method="post">
+          <p class="news-post">
+            <label for="news-post">Электронная почта</label>
+            <input id="news-post" type="text" name="post" value="" placeholder="Электронная почта">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form> 
       </section>
       <!--Здесь будет карта-->
     </main>
