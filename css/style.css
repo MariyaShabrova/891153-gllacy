@@ -1,6 +1,6 @@
 .container {
-    max-width: 1200 px;
-    min-width: 600px;
+    max-width: 1200px;
+    min-width: 1650px;
 }
 
 body {
@@ -17,6 +17,11 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
 }
+.inner-page {
+    background-color: #849d8f; 
+    background-position: 0 0;
+}   
+
 a {
     text-decoration: none;
 }
@@ -36,14 +41,34 @@ a {
     box-shadow: 0px 2px 2px 0 #ac1000;
     background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   }
+.menu a {
+    width: 87px;
+    height: 32px;
+    text-decoration: underline;
+    
+}
+.menu a:hover {
+    width: 87px;
+    height: 32px;
+    background-color: #f7f6f3;
+    color: #323232;
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+}
 .menu-navigation {
     font-size: 16px;
-    line-height: 1.13;
+    line-height: 18px;
     color: #ffffff;
+    
 }
+.user-navigation {
+    font-size: 14px;
+    line-height: 16px;
+}
+    
 .site-navigation,
 .user-navigation {
-
   list-style: none;
 }
 .submenu-catalog {
@@ -53,7 +78,8 @@ a {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
+  margin-top: 5px;
 }
 
 .site-navigation a,
@@ -62,7 +88,7 @@ a {
 }
 
 .submenu-catalog a {
-    color: #000000;
+    color:#323232;
 }
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -75,6 +101,7 @@ a {
 .submenu-catalog a:focus {
     background-color: #fbded8;
 }
+
 .user-look {
   width: 341px;
   height: 84px;
@@ -91,7 +118,7 @@ a {
 .login-password-new a {
     color: #323232;
     font-size: 13px;
-    line-height: 1.85;
+    line-height: 24px;
     
 }
 
@@ -112,7 +139,7 @@ a {
       background-color: #f9f6f3;
       border: 1px solid #d3d3d2;
       font-size: 14px;
-      line-height: 1.71;
+      line-height: 24px;
 } 
 .input-form input:focus {
      border-color: #663d15;
@@ -140,7 +167,7 @@ a {
 .appointment h2 {
     color: #323232;
     font-size: 24px;
-    line-height: 1.17;
+    line-height: 28px;
 }
 .feature-list {
     list-style: none;
@@ -155,13 +182,13 @@ a {
 }
 .feature-item h3 {
     font-size: 24px;
-    line-height: 1.25;
+    line-height: 30px;
     text-align: left;
     color: #323232;
 }
 .feature-item p {
     font-size: 16px;
-    list-style: 1.38;
+    list-style: 22px;
     text-align: left;
     color: #323232;
 }
@@ -184,7 +211,7 @@ a {
     background-color: #f9f6f3;
     border: 1px solid #d3d3d2;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
 }
 .subscription {
     color: #5a5a5a;
@@ -195,7 +222,75 @@ a {
     background-repeat: no-repeat;
     object-fit: contain;
 }
+.page-title {
+    font-size: 35px;
+    line-height: 41px;
+}
+.breadcrumbs {
+    list-style: none;
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 16px;
+    
+}
+.breadcrumbs a {
+    color: #ffffff
+}
+.menu-navigation-current {
+    width: 87px;
+    height: 32px;
+    background-color: #d07058;
+    border-radius: 15px;   
 
+}
+.basket {
+    width: 540px;
+    height: 242px;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
+    color: #323232;
+    font-size: 13px;
+    line-height: 16px;
+    list-style: none;
+    text-align: left;
+    
+}
+.hr-basket {
+    width: 510px;
+    height: 1px;
+    background-color: #cacac7;
+}
+
+.catalog-list {
+    list-style: none;
+  }
+  
+  .catalog-item {
+    background-color: #849d8f;
+  }
+  
+  .catalog-item:hover {
+    width: 293px;
+    height: 405px;
+    opacity: 0.2;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
+  }
+  .sum b {
+      font-size: 45px;
+      line-height: 45px;
+  }
+  .catalog-category {
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+}
+.button-price {
+    font-size: 18px;
+    line-height: 24px;
+    color: #fefefe;
+}
 .footer {
     color: #ffffff;
     background-color: #849d8f;
