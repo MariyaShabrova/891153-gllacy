@@ -2,9 +2,12 @@
     max-width: 1200px;
     min-width: 1650px;
 }
-
+html,
 body {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+}
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-align: left;
@@ -16,6 +19,15 @@ body {
     background-image: url(../img/fon1.png);
     background-position: top center;
     background-repeat: no-repeat;
+}
+.header-menu {
+    margin-bottom: 1200px;
+}
+.header-logo {
+margin: 0;
+padding: 0;
+width: 154px;
+height: 64px;
 }
 .inner-page {
     background-color: #849d8f; 
@@ -57,12 +69,17 @@ a {
     text-decoration: none;
 }
 .menu-navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
     
 }
 .user-navigation {
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     line-height: 16px;
 }
@@ -204,14 +221,14 @@ a {
     border-radius: 15px;
     margin-left: 27px;  
 }
-.news-post input[type="text"], {
-    font: inherit;
-    color: #000000;
-    text-transform: uppercase;
-    background-color: #f9f6f3;
-    border: 1px solid #d3d3d2;
+.news h3 {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
+}
+.news-item {
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: underline;
 }
 .subscription {
     color: #5a5a5a;
@@ -221,6 +238,33 @@ a {
     background-image: url(../img/invalid-name.png);
     background-repeat: no-repeat;
     object-fit: contain;
+}
+.subscription p {
+    width: 549px;
+    height: 211px;
+    border-radius: 10px;
+    background-color: #f8f7f4;
+  
+}
+.news-form {
+    width: 368px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: #5a5a5a;
+}
+.news-post p {
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 22px;
+}
+.news-post input[type="text"], {
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #f9f6f3;
+    border: 1px solid #d3d3d2;
+    font-size: 16px;
+    line-height: 24px;
 }
 .page-title {
     font-size: 35px;
@@ -290,6 +334,13 @@ a {
     font-size: 18px;
     line-height: 24px;
     color: #fefefe;
+}
+.hr-catalog-end {
+   width: 1200px;
+   height: 1px;
+   opacity: 0.3;
+   background-color: var(--white-two);
+   
 }
 .footer {
     color: #ffffff;
