@@ -9,29 +9,28 @@
     <link href="css/outline.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-  <header class="header-menu">
-  <div class="logo">
-  <a class="header-logo">
+  <header class="header-menu container">
   <img src="img/logo.svg" width="154" height="64" alt="Логотип проекта Глейси">
-  </a>
-  </div>
   <nav class="navigation">
-  <div class="menu-navigation">
+    <div class="navigation-site">
       <ul class="site-navigation">
-      <li class="menu"><a href="catalog.html">Каталог</a></li> 
+      <li class="menu"><a href="catalog.html">Каталог</a>
       <ul class="submenu-catalog">
-      <li class="submenu"><a href="news-cream.html"><strong>Новинки</strong></a></li>
+      <li>
+      <span class="submenu-catalog-title">Новинки</span></li>
       <hr width=128px height=1px opacity=0.2>
       <li class="submenu"><a href="catalog-cream.html">Сливочное</a></li>
       <li class="submenu"><a href="catalog-sherbet.html">Щербеты</a></li>
       <li class="submenu"><a href="catalog-ice.html">Фруктовый лед</a></li>
       <li class="submenu"><a href="catalog-melorin.html">Мелорин</a></li>
       </ul>
-    <li class="menu"><a href="shipping-and-payment.html">Доставка и оплата</a></li>
-    <li class="menu"><a href="info.html">О компании</a></li>
+      </li>
+      <li class="menu"><a href="shipping-and-payment.html">Доставка и оплата</a></li>
+      <li class="menu"><a href="info.html">О компании</a></li>
   </ul>
+</nav>
   <div class="user-navigation">
+  <div class="user-buttons">
     <div class="user-look"><a href="look"><img src="img/loupe.svg" alt="Поиск"></a>
     <form class="look-form">
         <input type="text" placeholder="Что ищем?">
@@ -39,6 +38,7 @@
           </button> 
       </form>
       </div>
+  </div>
     <div class="user"><a href="input"><img src="img/entrance.svg" alt="Вход">Вход</a>
       <form class="input-form" action="" method="post">
         <p>
@@ -61,6 +61,9 @@
       </form>
     </div>
     <div class="user"><a href="batton"><img src="img/basket.svg" ail="Корзина">Пусто</a></div>
+    </div>
+    </div>
+  </div>
   </nav>
 </header>
 <!--Здесь будет слайд-->
@@ -94,25 +97,31 @@
       <h1 class="visually-hidden">Магазин Глейси</h1>
       <section class="feature">
         <h2 class="visually-hidden">Особенности</h2>
-        <ul class="feature-list">
-          <li class="feature-item">          
-            <h3>Магазин Глейси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</h3>
-            <p><img src="img/ice-cream.svg" ail="Мороженое" width="49" height="49">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенным временем технологий</p>
-            <p><img src="img/eco.svg" alt="Листик" width="49" height="49"> Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-            <p><img src="img/cow.svg" alt="Корова" width="49" height="49"> Закупка ингредиентов произволиться только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-            <p><img src="img/thermometer.svg" width="49" height="49"> Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>         
-          </li>
-        </ul>
+        <p>Магазин Глейси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</p>
+        <div> class="feature-list-left">
+          <p class="feature-item"><img src="img/ice-cream.svg" ail="Мороженое" width="49" height="49">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенным временем технологий</p>
+          <p class="feature-item"><img src="img/eco.svg" alt="Листик" width="49" height="49"> Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        </div>
+        <div class="feature-list-right">
+          <p class="feature-item"><img src="img/cow.svg" alt="Корова" width="49" height="49"> Закупка ингредиентов произволиться только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <p class="feature-item"><img src="img/thermometer.svg" width="49" height="49"> Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>         
+          </div>
       </section>
       <section class="news">
-          <h2 class="visually-hidden">Новости</h2>
+          <ul class="post-list">
+           <li class="post">
+           <h2 class="visually-hidden">Новости</h2>
            <h3>Новости в нашем блоге</h3>
             <P class="news-item">10 способов сервировки фруктовых щербетов к столу</p>
       </section>
+    </li>
+    <li class="post">
       <section class="subscription">
         <h2 class="visually-hidden">Подписка</h2>
         <p class="subscription-item">Подпишитесь на нашу сладкую рассылку и будте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=))</p>
+        
         <!--Здесь будет форма-->
+       
         <form class="news-form" action="" method="post">
           <p class="news-post">
             <label for="news-post">Электронная почта</label>
@@ -120,6 +129,8 @@
           </p>
           <button class="button" type="submit">Отправить</button>
         </form> 
+      </li>
+      </ul>
       </section>
       <section class="modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>

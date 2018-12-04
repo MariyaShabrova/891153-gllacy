@@ -1,18 +1,16 @@
-.container {
-    max-width: 1200px;
-    min-width: 1650px;
-}
+
 html,
 body {
     margin: 0;
     padding: 0;
+    max-width: 1200px;
+    min-width: 1650px;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    text-align: left;
-    line-height: 1.13;
-    font-weight: 500;
+    font-family: 'Roboto', 'Arial' sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
     color: #ffffff;
     text-transform: uppercase;
     background-color: #849d8f;
@@ -21,22 +19,51 @@ body {
     background-repeat: no-repeat;
 }
 .header-menu {
-    margin-bottom: 1200px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-top: 10px;
+    display: flex;
+    min-height: 35px;
 }
-.header-logo {
-margin: 0;
-padding: 0;
-width: 154px;
-height: 64px;
+
+
+.navigation-site{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
+.header-menu img {
+    width: 153px;
+    height: 63px;
+    margin-left: -6px;
+    vertical-align: bottom;
+}
+.menu li {
+    
+    justify-content: center;
+    position: relative;
+    margin-top: 5px;
+    padding-top: 8px;   
+    vertical-align: top;
+
+}
+.menu a {
+    margin: 8px 15px 6px 15px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 18px; 
+}
+a {
+    text-decoration: none;
+}
+
+    
 .inner-page {
     background-color: #849d8f; 
     background-position: 0 0;
 }   
 
-a {
-    text-decoration: none;
-}
 .button {
     font: inherit;
     text-align: center;
@@ -53,10 +80,7 @@ a {
     box-shadow: 0px 2px 2px 0 #ac1000;
     background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   }
-.menu a {
-    width: 87px;
-    height: 32px;
-    text-decoration: underline;
+
     
 }
 .menu a:hover {
@@ -68,18 +92,30 @@ a {
     font-weight: bold;
     text-decoration: none;
 }
-.menu-navigation {
+
+  
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.site-navigation {
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    display: flex;
-    font-size: 16px;
-    line-height: 18px;
-    color: #ffffff;
-    
+    margin-left: 30px;
 }
 .user-navigation {
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
+    height: 64px;
+    width: 272px;
     font-size: 14px;
     line-height: 16px;
 }
@@ -87,8 +123,12 @@ a {
 .site-navigation,
 .user-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .submenu-catalog {
+  flex-direction: column;
+  align-self: center;
   list-style: none;
   width: 143px;
   height: 171px;
@@ -101,12 +141,14 @@ a {
 
 .site-navigation a,
 .user-navigation a { 
+  display: block;
   color: #ffffff;
 }
 
 .submenu-catalog a {
     color:#323232;
 }
+
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
@@ -186,39 +228,55 @@ a {
     font-size: 24px;
     line-height: 28px;
 }
-.feature-list {
-    list-style: none;
-    width: 1146px;
-    height: 306px;
+.feature {
+    margin-bottom: 40px;
+    padding: 25px 15px 22px 20px;
+    font-size: 16px;
+    line-height: 22px;
     background-color: #849d8f;
     background-image: url(../img/invalid-one-name.jpg);
-    background-repeat: no-repeat;
+    min-height: 246px;
     border-radius: 15px;
-    margin-left: 27px;
-    object-fit: contain;
 }
-.feature-item h3 {
+
+
+.feature p {
+
+    padding-left: 57px;
     font-size: 24px;
     line-height: 30px;
-    text-align: left;
     color: #323232;
 }
-.feature-item p {
+.feature-list-left {
+    display: flex;
+    width: 38px;
     font-size: 16px;
     list-style: 22px;
     text-align: left;
     color: #323232;
 }
-.news {
+
+
+.post-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.post {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
     color: #323232;
-    width: 560px;
+    width: 540px;
     height: 220px;
     background-color: #849d8f;
     background-image: url(../img/invalid-name.jpg);
     background-position: 0 0;
     background-repeat: no-repeat;
     object-fit: contain;
-    border-radius: 15px;
+    border-radius: 11px;
     margin-left: 27px;  
 }
 .news h3 {
@@ -375,5 +433,5 @@ a {
 .footer-copyright .footer-button:focus {
   color: #ffbc9e;
 }
-
+/*для построенич сеток*/
 
