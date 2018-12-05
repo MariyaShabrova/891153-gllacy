@@ -9,10 +9,14 @@
     <link href="css/outline.css" rel="stylesheet">
   </head>
   <body>
+  <div class="content">
   <header class="header-menu container">
-  <img src="img/logo.svg" width="154" height="64" alt="Логотип проекта Глейси">
+  <a class="main-header-logo">
+  <img src="img/logo.svg"  alt="Логотип проекта Глейси">
+  </a>
   <nav class="navigation">
-    <div class="navigation-site">
+    <div class="main-navigation-wrapper">
+    <div class="container">
       <ul class="site-navigation">
       <li class="menu"><a href="catalog.html">Каталог</a>
       <ul class="submenu-catalog">
@@ -28,7 +32,6 @@
       <li class="menu"><a href="shipping-and-payment.html">Доставка и оплата</a></li>
       <li class="menu"><a href="info.html">О компании</a></li>
   </ul>
-</nav>
   <div class="user-navigation">
   <div class="user-buttons">
     <div class="user-look"><a href="look"><img src="img/loupe.svg" alt="Поиск"></a>
@@ -60,14 +63,15 @@
         </button>
       </form>
     </div>
-    <div class="user"><a href="batton"><img src="img/basket.svg" ail="Корзина">Пусто</a></div>
+    <div class="user"><a href="batton"><img src="img/basket.svg" ail="Корзина">Пусто</a>
     </div>
     </div>
+  </div>
   </div>
   </nav>
 </header>
 <!--Здесь будет слайд-->
-<main class="container">
+<div class="form">
     <section class="appointment">
       <h2>Мы обязательно вам ответим!</h2>
       <p class="appointment-info"></p>
@@ -92,37 +96,39 @@
       Закрыть
      </button>
     </section>
-  </main>
-    <main class="content">
-      <h1 class="visually-hidden">Магазин Глейси</h1>
+  </div>
+    <main class="container">
+      <div class="index-columns">
+          <h1 class="visually-hidden">Магазин Глейси</h1>
+          <h2 class="visually-hidden">Особенности</h2>
+          <p>Магазин Глейси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</p>
       <section class="feature">
-        <h2 class="visually-hidden">Особенности</h2>
-        <p>Магазин Глейси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</p>
-        <div> class="feature-list-left">
+        <div class="feature-list-left">
           <p class="feature-item"><img src="img/ice-cream.svg" ail="Мороженое" width="49" height="49">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенным временем технологий</p>
           <p class="feature-item"><img src="img/eco.svg" alt="Листик" width="49" height="49"> Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </div>
+        </section>
+        <section class="feature">
         <div class="feature-list-right">
           <p class="feature-item"><img src="img/cow.svg" alt="Корова" width="49" height="49"> Закупка ингредиентов произволиться только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
           <p class="feature-item"><img src="img/thermometer.svg" width="49" height="49"> Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>         
           </div>
       </section>
+      </div>
       <section class="news">
           <ul class="post-list">
            <li class="post">
            <h2 class="visually-hidden">Новости</h2>
            <h3>Новости в нашем блоге</h3>
             <P class="news-item">10 способов сервировки фруктовых щербетов к столу</p>
-      </section>
-    </li>
-    <li class="post">
-      <section class="subscription">
-        <h2 class="visually-hidden">Подписка</h2>
-        <p class="subscription-item">Подпишитесь на нашу сладкую рассылку и будте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=))</p>
-        
+              </li>
+            <li class="post">
+      
+           <h2 class="visually-hidden">Подписка</h2>
+           <p class="subscription-item">Подпишитесь на нашу сладкую рассылку и будте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=))</p>
         <!--Здесь будет форма-->
        
-        <form class="news-form" action="" method="post">
+          <form class="news-form" action="" method="post">
           <p class="news-post">
             <label for="news-post">Электронная почта</label>
             <input id="news-post" type="text" name="post" value="" placeholder="Электронная почта">
@@ -130,19 +136,19 @@
           <button class="button" type="submit">Отправить</button>
         </form> 
       </li>
-      </ul>
+    </ul>
       </section>
       <section class="modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <p>
-          <img src="img/map.jpg" width="1100" height="430" alt="Адрес главного офиса и оффлайн магазина ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        </p>
-        <button class="modal-close" type="button">Закрыть</button>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.626500259789!2d30.324913289047686!3d59.93856375735322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463165208330" width="1241" height="430" frameborder="0" style="border:0" allowfullscreen>
+           alt="Адрес главного офиса и оффлайн магазина ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+          </p>
       </section>
       <!--Здесь будет карта-->
     </main>
-    </div>
     <footer class="footer">
+        <div class="container">
       <ul class="footer-social">
         <li><a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер"></a></li>
         <li><a class="social-button" href="#"><img src="img/instagram.svg" alt="Инстаграм"></a></li>
@@ -160,6 +166,8 @@
         <a class="footer-button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Академия HTML" width="108" height="39"></a><br>
         <b>Сделано в HTML Academy @2018</b>
       </p>
+    </div>
     </footer>
+  </div>
   </body>
 </html>
