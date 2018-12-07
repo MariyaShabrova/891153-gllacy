@@ -9,7 +9,7 @@
     <link href="css/outline.css" rel="stylesheet">
   </head>
   <body>
-  <div class="content">
+  <div class="site-wrapper">
   <header class="header-menu container">
   <a class="main-header-logo">
   <img src="img/logo.svg"  alt="Логотип проекта Глейси">
@@ -97,33 +97,59 @@
      </button>
     </section>
   </div>
-    <main class="container">
-      <div class="index-columns">
+    <main class="main">
+    <div class="container">
+    <div class="working-information">
+            <p>С 10 до 20, ежедневно</p>
+            <p>8 812 450-25-25</p>
+          </div>
+          <section class="index-main-banner">
+            <div class="slide" id="slide-1">
+              <p>Крем-брюле и пломбир с малиновым джемом</p>
+              <a class="btn" href="#">Давайте оба!</a>
+            </div>
+            <div class="slide" id="slide-2">
+              <p>Шоколадный пломбир и лимонный сорбет</p>
+              <a class="btn" href="#">Давайте оба!</a>
+            </div>
+            <div class="slide" id="slide-3">
+              <p>Пломбир с помадкой и клубничный щербет</p>
+              <a class="btn" href="#">Давайте оба!</a>
+            </div>
+            <div class="slide-btns">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+            </div>
+          </section>
+        <div class="index-columns">
+          <section class="feature-list-center">
           <h1 class="visually-hidden">Магазин Глейси</h1>
           <h2 class="visually-hidden">Особенности</h2>
-          <p>Магазин Глейси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</p>
-      <section class="feature">
-        <div class="feature-list-left">
+         <p>Магазин Глейси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</p>
+         </section>
+          <div class="feature">
+         <section class="feature-list-left">
           <p class="feature-item"><img src="img/ice-cream.svg" ail="Мороженое" width="49" height="49">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенным временем технологий</p>
           <p class="feature-item"><img src="img/eco.svg" alt="Листик" width="49" height="49"> Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        </div>
         </section>
-        <section class="feature">
-        <div class="feature-list-right">
+     
+        <section class="feature-list-right">
           <p class="feature-item"><img src="img/cow.svg" alt="Корова" width="49" height="49"> Закупка ингредиентов произволиться только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
           <p class="feature-item"><img src="img/thermometer.svg" width="49" height="49"> Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>         
+          </section> 
           </div>
-      </section>
-      </div>
+    </div>
+    </div>
+     <div class=news-post">
       <section class="news">
           <ul class="post-list">
-           <li class="post">
+           <li class="post-1">
            <h2 class="visually-hidden">Новости</h2>
-           <h3>Новости в нашем блоге</h3>
-            <P class="news-item">10 способов сервировки фруктовых щербетов к столу</p>
+           <h3>Новое в нашем блоге</h3>
+            <a class="news-item">10 способов сервировки фруктовых щербетов к столу</a>
               </li>
-            <li class="post">
-      
+            <li class="post-2">
            <h2 class="visually-hidden">Подписка</h2>
            <p class="subscription-item">Подпишитесь на нашу сладкую рассылку и будте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=))</p>
         <!--Здесь будет форма-->
@@ -133,6 +159,7 @@
             <label for="news-post">Электронная почта</label>
             <input id="news-post" type="text" name="post" value="" placeholder="Электронная почта">
           </p>
+          </div>
           <button class="button" type="submit">Отправить</button>
         </form> 
       </li>
@@ -145,6 +172,7 @@
            alt="Адрес главного офиса и оффлайн магазина ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
           </p>
       </section>
+    
       <!--Здесь будет карта-->
     </main>
     <footer class="footer">
