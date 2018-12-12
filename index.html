@@ -11,12 +11,12 @@
   <body>
   <div class="site-wrapper">
   <header class="header-menu container">
+      <nav class="navigation">
+          <div class="main-navigation-wrapper">
   <a class="main-header-logo">
   <img src="img/logo.svg"  alt="Логотип проекта Глейси">
   </a>
-  <nav class="navigation">
-    <div class="main-navigation-wrapper">
-    <div class="container">
+      <div class="container">
       <ul class="site-navigation">
       <li class="menu"><a href="catalog.html">Каталог</a>
       <ul class="submenu-catalog">
@@ -30,7 +30,7 @@
       </ul>
       </li>
       <li class="menu"><a href="shipping-and-payment.html">Доставка и оплата</a></li>
-      <li class="menu"><a href="info.html">О компании</a></li>
+      <li class="menu"><a href="info.html">О Компании</a></li>
   </ul>
   <div class="user-navigation">
   <div class="user-buttons">
@@ -42,7 +42,7 @@
       </form>
       </div>
   </div>
-    <div class="user"><a href="input"><img src="img/entrance.svg" alt="Вход">Вход</a>
+    <div class="user"><a href="input"><img src="img/entrance.svg" alt="Вход"><p>Вход</p></a>
       <form class="input-form" action="" method="post">
         <p>
           <label class="visually-hidden" for="user-post">Электронная почта</label>
@@ -63,7 +63,7 @@
         </button>
       </form>
     </div>
-    <div class="user"><a href="batton"><img src="img/basket.svg" ail="Корзина">Пусто</a>
+    <div class="user"><a href="batton"><img src="img/basket.svg" ail="Корзина"><p>Пусто</p></a>
     </div>
     </div>
   </div>
@@ -101,7 +101,7 @@
     <div class="container">
     <div class="working-information">
             <p>С 10 до 20, ежедневно</p>
-            <p>8 812 450-25-25</p>
+            <span>8 812 450-25-25</span>
           </div>
           <section class="index-main-banner">
             <div class="slide" id="slide-1">
@@ -147,7 +147,7 @@
            <li class="post-1">
            <h2 class="visually-hidden">Новости</h2>
            <h3>Новое в нашем блоге</h3>
-            <a class="news-item">10 способов сервировки фруктовых щербетов к столу</a>
+            <p class="news-item">10 способов сервировки фруктовых щербетов к столу</p>
               </li>
             <li class="post-2">
            <h2 class="visually-hidden">Подписка</h2>
@@ -158,18 +158,18 @@
           <p class="news-post">
             <label for="news-post">Электронная почта</label>
             <input id="news-post" type="text" name="post" value="" placeholder="Электронная почта">
-          </p>
-          </div>
           <button class="button" type="submit">Отправить</button>
+        </p>
+      </div>
         </form> 
       </li>
     </ul>
       </section>
+    </div>
       <section class="modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.626500259789!2d30.324913289047686!3d59.93856375735322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463165208330" width="1241" height="430" frameborder="0" style="border:0" allowfullscreen>
-           alt="Адрес главного офиса и оффлайн магазина ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+          <img src="img/map.jpg" width="1200px" height="430px" alt="Адрес главного офиса и оффлайн магазина ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </p>
       </section>
     
@@ -196,6 +196,5 @@
       </p>
     </div>
     </footer>
-  </div>
   </body>
 </html>

@@ -8,82 +8,80 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="inner-page">
-  <div class="content">
-    <header class="header-menu container">
+  <header class="header-menu container clearfix">
+  <nav class="navigation">
+  <div class="main-navigation-wrapper">
     <a class="main-header-logo" href="index.html">
-    <img src="img/logo.svg" alt="Логотип проекта Глейси">
+    <img src="img/logo.svg"  alt="Логотип проекта Глейси">
     </a>
-    <nav class="navigation">
-      <div class="main-navigation-wrapper">
-      <div class="container">
-        <ul class="site-navigation">
-        <li class="menu"><a href="catalog.html">Каталог</a>
-        <ul class="submenu-catalog">
-        <li>
-        <span class="submenu-catalog-title">Новинки</span></li>
-        <hr width=128px height=1px opacity=0.2>
-        <li class="submenu"><a href="catalog-cream.html">Сливочное</a></li>
-        <li class="submenu"><a href="catalog-sherbet.html">Щербеты</a></li>
-        <li class="submenu"><a href="catalog-ice.html">Фруктовый лед</a></li>
-        <li class="submenu"><a href="catalog-melorin.html">Мелорин</a></li>
-        </ul>
-        </li>
-        <li class="menu"><a href="shipping-and-payment.html">Доставка и оплата</a></li>
-        <li class="menu"><a href="info.html">О компании</a></li>
+  <div class="container">
+    <ul class="site-navigation">
+    <li class="menu">
+    <a class ="menu-activ" href="catalog.html">Каталог</a>
+      <ul class="submenu-catalog">
+      <li>
+      <span class="submenu-catalog-title">Новинки</span></li>
+      <hr width=128px height=1px opacity=0.2>
+      <li class="submenu"><a href="catalog-cream.html">Сливочное</a></li>
+      <li class="submenu"><a href="catalog-sherbet.html">Щербеты</a></li>
+      <li class="submenu"><a href="catalog-ice.html">Фруктовый лед</a></li>
+      <li class="submenu"><a href="catalog-melorin.html">Мелорин</a></li>
+      </ul>
+      </li>
+      <li class="menu"><a href="shipping-and-payment.html">Доставка и оплата</a></li>
+      <li class="menu"><a href="info.html">О компании</a></li>
     </ul>
     <div class="user-navigation">
-   <div class="user-look"><a href="look"><img src="img/loupe.svg" alt="Поиск"></a>
-        <form class="look-form">
-                      <input type="text" placeholder="Что ищем?">
-                      <button class="button" type="submit">
-                        </button> 
-         </form>
-                    </div>
-  <div class="user"><a href="input"><img src="img/entrance.svg" alt="Вход">Вход</a>
-         <form class="input-form" action="" method="post">
-                      <p>
-                        <label class="visually-hidden" for="user-post">Электронная почта</label>
-                        <input class="post-icon-user" id="user-post" type="text" name="post" placeholder="Электронная почта">
-                      </p>
-                      <p>
-                        <label class="visually-hidden" for="user-password">Пароль</label>
-                        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-                      </p>
-                      <p class="login-password-info">
-                        <a class="restore" href="#">Забыли пароль?</a>
-                      </p>
-                      <p class="login-password-new">
-                          <a class="restore" href="#">Новая регистрация</a>
-                        </p>
-                      <button class="button" type="submit">
-                        Войти
-                      </button>
-          </form>
-                  </div>
-                    <div class="user"><a href="batton"><img src="img/basket-red.svg" ail="Корзина">2 товара</a>
-                      <ul class="basket">
-                          <li class="basket-product"><img src="img/cross-small.svg"> 
-                            <img src="img/product-1.jpg" width="33" height="33">Пломбир с апельсиновым джемом 1.5 кг х 200 руб. 300 руб.</a></li>
-                          <li class="basket-product"><img src="img/cross-small.svg">   
-                            <img src="img/product-3.jpg" width="33" height="33">Сливочно-клубничное с присыпкой из белого шоколада 1.5 кг х 300 руб. 450 руб.</a></li>
-                          <hr class="hr-basket">
-                            <li class="total">Итого: 750 руб.</li>  
-                          <button class="button" type="submit">
-                              Оформить заказ
-                            </button>
-                          </ul>  
-                    </div>
-                    </div>
-                    </div>
+      <div class="user-buttons-common">
+      <div class="user-look-common"><a href="look"><img src="img/loupe.svg" alt="Поиск"></a>
+      <form class="look-form">
+      <input type="text" placeholder="Что ищем?">
+      <button class="button" type="submit">
+      </button> 
+      </form>
       </div>
-                </nav>
-              </header>  
+    </div>
+      <div class="user-common"><a href="input"><img src="img/entrance.svg" alt="Вход"><p>Вход</p></a>
+      <form class="input-form" action="" method="post">
+      <p>
+      <label class="visually-hidden" for="user-post">Электронная почта</label>
+      <input class="post-icon-user" id="user-post" type="text" name="post" placeholder="Электронная почта">
+      </p>
+      <p>
+      <label class="visually-hidden" for="user-password">Пароль</label>
+      <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="login-password-info">
+      <a class="restore" href="#">Забыли пароль?</a>
+      </p>
+      <p class="login-password-new">
+      <a class="restore" href="#">Новая регистрация</a>
+      </p>
+      <button class="button" type="submit">Войти</button>
+      </form>
+    </div>
+    <div class="user-batton"><a href="batton"><img src="img/basket-red.svg" ail="Корзина"><p>2 товара</p></a>
+      <ul class="basket">
+      <li class="basket-product"><img src="img/cross-small.svg"> 
+      <img src="img/product-1.jpg" width="33" height="33">Пломбир с апельсиновым джемом 1.5 кг х 200 руб. 300 руб.</a></li>
+      <li class="basket-product"><img src="img/cross-small.svg">   
+      <img src="img/product-3.jpg" width="33" height="33">Сливочно-клубничное с присыпкой из белого шоколада 1.5 кг х 300 руб. 450 руб.</a></li>
+      <hr class="hr-basket">
+      <li class="total">Итого: 750 руб.</li>  
+      <button class="button" type="submit">Оформить заказ</button>
+      </ul>  
+    </div>
+    </div>
+    </div>
+    </div>
+    </nav>
+    </header>  
 <main class="main">
   <div class="container">
-      <div class="working-information">
-          <p>С 10 до 20, ежедневно</p>
-          <p>8 812 450-25-25</p>
-        </div>
+        <div class="working-information">
+        <p>С 10 до 20, ежедневно</p>
+        <span>8 812 450-25-25</span>
+      </div>
   <nav class="breadcrumbs">
     <ul>
     <li><a href="index.html">Главная</a> </li>
@@ -103,7 +101,7 @@
   <div class="catalog-list">
     <a class="button button-item" href="#">Быстрый просмотр</a>
     <div class="catalog-item">
-      <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+      <img src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
     <p class="sum"><span>310<img src="img/ruble.svg" width="31" height="33" alt="Рубль"></span>/ кг</p>
      <div class="catalog-category"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></div>
     </div>
@@ -224,7 +222,7 @@
     </div>
   </section>
   </div>
-</div> 
+</div>
   <nav class="catalog-pages">
   <ul>
     <li class="pagination-item pagination-iteam-current"><a href="#">1</a></li>
