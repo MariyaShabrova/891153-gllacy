@@ -34,7 +34,8 @@
   </ul>
   <div class="user-navigation">
   <div class="user-buttons">
-    <div class="user-look"><a href="look"></a>
+    <div class="user-look">
+    <a class="btn" href="look"></a>
     <form class="look-form">
         <input type="text" placeholder="Что ищем?">
         <button class="button" type="submit">
@@ -44,7 +45,7 @@
   </div>
     <div class="user">
     <div class="user-entrance">
-    <a href="input"><p>Вход</p></a>
+    <a class="btn" href="input"><p>Вход</p></a>
       <form class="input-form" action="" method="post">
         <p>
           <label class="visually-hidden" for="user-post">Электронная почта</label>
@@ -68,7 +69,7 @@
     </div>
     <div class="user">
      <div class="user-basket"> 
-      <a href="batton"><p>Пусто</p></a>
+      <a class="btn" href="batton"><p>Пусто</p></a>
     </div>
     </div>
     </div>
@@ -128,7 +129,7 @@
               <label for="btn-3"></label>
             </div>
           </section>
-        <div class="index-columns">
+        <div class="index-columns clearfix">
           <section class="feature-list-center">
           <h1 class="visually-hidden">Магазин Глейси</h1>
           <h2 class="visually-hidden">Особенности</h2>
@@ -136,13 +137,21 @@
          </section>
           <div class="feature">
          <section class="feature-list-left">
-          <p class="feature-item-1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенным временем технологий</p>
-          <p class="feature-item-2"><img src="img/eco.svg" alt="Листик" width="49" height="49"> Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          <a class="feature-item-1"><img src="img/ice-cream.svg" width="49" height="49">
+          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенным временем технологий</p>
+          </a>
+          <a class="feature-item-2"><img src="img/eco.svg" alt="Листик"  width="49" height="49"> 
+          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        </a>
         </section>
      
         <section class="feature-list-right">
-          <p class="feature-item-3"><img src="img/cow.svg" alt="Корова" width="49" height="49"> Закупка ингредиентов произволиться только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-          <p class="feature-item-4"><img src="img/thermometer.svg" width="49" height="49"> Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>         
+          <a class="feature-item-3"><img src="img/cow.svg" alt="Корова" width="49" height="49">
+          <p> Закупка ингредиентов произволиться только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          </a>
+          <a class="feature-item-4"><img src="img/thermometer.svg" width="49" height="49"> 
+          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>         
+          </a>
           </section> 
           </div>
     </div>
@@ -153,34 +162,36 @@
            <li class="post-1">
            <h2 class="visually-hidden">Новости</h2>
            <h3>Новое в нашем блоге</h3>
-            <p class="news-item">10 способов сервировки фруктовых щербетов к столу</p>
+            <a class="news-item" href="#">10 способов сервировки фруктовых щербетов к столу</a>
               </li>
             <li class="post-2">
+            <div class="wrap">
            <h2 class="visually-hidden">Подписка</h2>
            <p class="subscription-item">Подпишитесь на нашу сладкую рассылку и будте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=))</p>
         <!--Здесь будет форма-->
        
-          <form class="news-form" action="" method="post">
-          <p class="news-post">
-            <label for="news-post">Электронная почта</label>
-            <input id="news-post" type="text" name="post" value="" placeholder="Электронная почта">
+          <form action="" method="post">
+          <div class="news-post">
+            <label for="email">Электронная почта</label>
+            <input id="email" type="email" name="email" value="" placeholder="Электронная почта">
+            </div>
           <button class="button" type="submit">Отправить</button>
-        </p>
-      </div>
         </form> 
+        </div>
       </li>
     </ul>
       </section>
     </div>
-      <section class="modal-map">
+    </main>
+      <div class="modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <p>
           <img src="img/map.jpg" width="1200px" height="430px" alt="Адрес главного офиса и оффлайн магазина ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </p>
-      </section>
+      </div>
     
       <!--Здесь будет карта-->
-    </main>
+
     <footer class="footer">
         <div class="container">
       <ul class="footer-social">
